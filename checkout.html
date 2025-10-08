@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Checkout — Sunlit Shop</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html">Sunlit<span>Shop</span></a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a class="btn cart-btn" href="checkout.html">Cart (<span id="cart-count-3">0</span>)</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container checkout-main">
+<h1>Checkout</h1>
+<div class="checkout-grid">
+<div class="order-summary card">
+<h2>Your Order</h2>
+<div id="order-items"></div>
+<div class="order-total">Total: <strong id="order-total">₹0</strong></div>
+</div>
+
+
+<form id="checkout-form" class="card">
+<h2>Shipping & Payment</h2>
+<label>Full name
+<input type="text" id="fullname" required>
+</label>
+<label>Email
+<input type="email" id="email" required>
+</label>
+<label>Address
+<textarea id="address" rows="3" required></textarea>
+</label>
+<label>City
+<input type="text" id="city" required>
+</label>
+<label>Postal Code
+<input type="text" id="postal" required>
+</label>
+<label>Card Number (demo)
+<input type="text" id="card" placeholder="4242 4242 4242 4242" required>
+</label>
+<div class="form-actions">
+<button type="submit" class="btn primary">Place Order</button>
+<a class="btn ghost" href="products.html">Continue Shopping</a>
+</div>
+</form>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container copyright">© 2025 SunlitShop</div>
+</footer>
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>
